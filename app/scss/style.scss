@@ -694,6 +694,99 @@ svg.swiper-button-disabled {
     }
 }
 
+.main-trade {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background: linear-gradient(180deg, #6C5444 0%, #433932 100%);
+
+    h2 {
+        max-width: 793px;
+        margin: 0 auto 16px;
+        color: var(--white);
+        text-align: center;
+
+        &+p {
+            max-width: 565px;
+            margin: 0 auto 48px;
+            color: var(--white);
+            text-align: center;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    &__item {
+        padding: 32px 24px;
+        background: var(--white);
+        border-radius: 10px;
+
+        svg {
+            margin-bottom: 48px;
+        }
+
+        h3 {
+            margin-bottom: 16px;
+            color: var(--brown-text)
+        }
+
+        p {
+            color: var(--brown-light-text)
+        }
+
+        &:last-of-type {
+            grid-column: span 2;
+            background: var(--white) url(../images/main-trade.avif) right bottom / contain no-repeat;
+
+            p {
+                max-width: 375px;
+            }
+        }
+    }
+}
+
+.main-analytics {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background: var(--bg-bej);
+
+    h2 {
+        max-width: 793px;
+        margin: 0 auto 16px;
+        color: var(--brown-text);
+        text-align: center;
+
+        &+p {
+            max-width: 565px;
+            margin: 0 auto 48px;
+            color: var(--brown-light-text);
+            text-align: center;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        background: var(--brown-light-cards);
+        border-radius: 10px;
+    }
+
+    .widget-box {
+        min-height: 100px;
+        background: red;
+
+        &:last-of-type {
+            grid-row: 1/3;
+            grid-column: 2;
+        }
+    }
+}
+
 @import '../scss/hovers';
 @import '../scss/1800';
 @import '../scss/1700';
