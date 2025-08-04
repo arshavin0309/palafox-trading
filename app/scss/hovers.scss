@@ -1,3 +1,121 @@
 @media (min-width: 1200px) {
-    
+    .white-btn {
+        &:hover {
+            background: var(--brown-light-cards);
+            color: var(--brown);
+        }
+    }
+
+    .line-btn {
+        &:hover {
+            background: var(--brown);
+            color: var(--white);
+        }
+    }
+
+    .brown-btn {
+        &:hover {
+            background: var(--white);
+            color: var(--brown);
+        }
+    }
+
+    .main-why,
+    .main-about {
+        &__navigation {
+            svg {
+                &:not(.swiper-button-disabled) {
+                    &:hover {
+                        background: var(--brown);
+
+                        path {
+                            fill: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        .menu {
+            &>.menu-item {
+                &>a {
+                    &:hover {
+                        color: var(--hover);
+                    }
+                }
+            }
+        }
+
+        &.scrolled {
+            .header__logo {
+                &:hover {
+                    path {
+                        &:not(.none) {
+                            fill: var(--hover);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__logo {
+            &:hover {
+                path {
+                    &:not(.none) {
+                        fill: var(--hover);
+                    }
+                }
+            }
+        }
+
+        .menu {
+            &>.menu-item {
+                &>a {
+                    &:hover {
+                        color: var(--hover);
+                    }
+                }
+            }
+        }
+
+        &__docs {
+            &>a {
+                &:hover {
+                    color: var(--hover);
+                }
+            }
+        }
+    }
+
+    .main-contacts {
+
+        &__tel,
+        &__mail {
+            &:hover {
+                color: var(--hover);
+
+                path {
+                    fill: var(--hover);
+                }
+            }
+        }
+    }
+
+    .main-about {
+        &__pagination {
+            .swiper-pagination-bullet {
+                &:hover {
+                    color: var(--hover);
+
+                    &::before, &::after {
+                        background: var(--hover);
+                    }
+                }
+            }
+        }
+    }
 }
