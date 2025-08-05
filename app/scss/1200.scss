@@ -1,3 +1,96 @@
 @media (max-width: 1200px) {
-    
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .main-hero {
+        padding-top: 200px;
+        padding-bottom: 100px;
+
+        .container {
+            min-height: calc(100vh - 200px - 100px);
+        }
+    }
+
+    .main-why {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        &__swiper {
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &__item {
+            width: 361px;
+        }
+    }
+
+    .main-analytics {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .main-contacts {
+        padding-bottom: 80px;
+    }
+
+    .main-trade {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .main-about {
+        padding-bottom: 80px;
+    }
+
+    .main-types {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        &__swiper {
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &__item {
+            width: 370px;
+        }
+    }
+
+    .main-choose {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    h1,
+    .h1 {
+        font-size: clamp(32px, 7vw, 96px);
+    }
+
+    h2,
+    .h2 {
+        font-size: clamp(24px, 5vw, 48px);
+    }
+
+    h3,
+    .h3 {
+        font-size: clamp(18px, 4vw, 24px);
+    }
+
+    p {
+        font-size: clamp(16px, 3vw, 18px);
+    }
+
+    .footer {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
 }

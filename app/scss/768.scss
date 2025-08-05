@@ -1,3 +1,19 @@
 @media (max-width: 768px) {
-    
+    .main-why {
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            padding: 24px 16px;
+
+            svg {
+                margin-bottom: 24px;
+            }
+        }
+
+        &__navigation {
+            margin-bottom: 24px;
+        }
+    }
 }

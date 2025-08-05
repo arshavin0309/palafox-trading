@@ -1,10 +1,33 @@
 const mainWhySwiper = new Swiper('.main-why__swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 24,
 
     navigation: {
         nextEl: '.main-why__swiper-button-next',
         prevEl: '.main-why__swiper-button-prev',
+    },
+
+    breakpoints: {
+        501: {
+            slidesPerView: 'auto',
+        },
+        1201: {
+            slidesPerView: 3,
+        }
+    },
+});
+
+const mainTypesSwiper = new Swiper('.main-types__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+
+    breakpoints: {
+        501: {
+            slidesPerView: 'auto',
+        },
+        1201: {
+            slidesPerView: 3,
+        }
     },
 });
 
@@ -43,9 +66,9 @@ function updateOffsets() {
         offsets = {
             'types': 57,
             'platform': 57,
-            'about': 187,
+            'about': 137,
             'analytics': 57,
-            'contacts': 187,
+            'contacts': 13,
         };
     }
 }
