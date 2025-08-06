@@ -1,3 +1,9 @@
 @media (max-width: 600px) {
-    
+    .main-trade {
+        &__item {
+            &:last-of-type {
+                background-size: 300px;
+            }
+        }
+    }
 }

@@ -62,13 +62,21 @@ function updateOffsets() {
             'analytics': 57,
             'contacts': 187,
         };
-    } else {
+    } else if (window.innerWidth > 768) {
         offsets = {
             'types': 57,
             'platform': 57,
             'about': 137,
             'analytics': 57,
-            'contacts': 13,
+            'contacts': 137,
+        };
+    } else {
+        offsets = {
+            'types': 50,
+            'platform': 50,
+            'about': 130,
+            'analytics': 50,
+            'contacts': 130,
         };
     }
 }

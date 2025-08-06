@@ -32,19 +32,49 @@
     .main-analytics {
         padding-top: 80px;
         padding-bottom: 80px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .main-contacts {
         padding-bottom: 80px;
+
+        &__container {
+            gap: 35px;
+
+            img {
+                width: 100%;
+                margin-top: auto;
+            }
+        }
     }
 
     .main-trade {
         padding-top: 80px;
         padding-bottom: 80px;
+
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     .main-about {
         padding-bottom: 80px;
+
+        &__swiper {
+            .swiper-slide {
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &__container {
+            gap: 26px;
+        }
     }
 
     .main-types {
@@ -66,6 +96,27 @@
     .main-choose {
         padding-top: 80px;
         padding-bottom: 80px;
+
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            &.tr {
+                grid-column: initial;
+                grid-row: initial;
+
+                img {
+                    max-height: 221px;
+                    object-fit: contain;
+                    object-position: left;
+                }
+
+                .brown-btn {
+                    width: calc(50% - 10px);
+                }
+            }
+        }
     }
 
     h1,
@@ -83,14 +134,75 @@
         font-size: clamp(18px, 4vw, 24px);
     }
 
-    p {
+    p,
+    li {
         font-size: clamp(16px, 3vw, 18px);
     }
 
     .footer {
         padding-top: 80px;
         padding-bottom: 80px;
+
+        &__content {
+            margin-bottom: 80px;
+        }
+
+        &__box {
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 
+    .header {
+        &__burger {
+            display: block;
+        }
 
+        &::before {
+            width: calc(100% - 16px - 16px);
+        }
+
+        .menu {
+            position: fixed;
+            top: 80px;
+            right: -300px;
+            width: 100%;
+            max-width: 300px;
+            height: calc(100vh - 80px);
+            flex-direction: column;
+            gap: 0;
+            background: var(--brown);
+            border-top: 1px solid var(--brown-text);
+
+            &>.menu-item {
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid var(--brown-text);
+
+                &>a {
+                    display: block;
+                    padding: 15px 30px;
+                }
+            }
+
+            &.active {
+                right: 0;
+            }
+        }
+
+        &.active {
+            background: var(--brown);
+
+            &::before {
+                height: 0;
+            }
+        }
+
+        &.scrolled {
+            .menu {
+                top: 57px;
+                height: calc(100vh - 57px);
+            }
+        }
+    }
 }
