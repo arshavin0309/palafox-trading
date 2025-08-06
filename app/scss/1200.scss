@@ -156,6 +156,28 @@
     .header {
         &__burger {
             display: block;
+
+            .burger-line {
+                transform-origin: center;
+            }
+
+            &.active {
+                .top {
+                    transform: translate(-3px, 4px) rotate(45deg);
+                }
+
+                .middle {
+                    opacity: 0;
+                }
+
+                .bottom {
+                    transform: translate(-3px, -3px) rotate(-45deg);
+                }
+
+                path {
+                    fill: var(--white);
+                }
+            }
         }
 
         &::before {
