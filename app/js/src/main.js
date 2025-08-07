@@ -29,6 +29,11 @@ const mainTypesSwiper = new Swiper('.main-types__swiper', {
             slidesPerView: 3,
         }
     },
+
+    pagination: {
+        el: ".main-types__pagination",
+        clickable: true,
+    },
 });
 
 const mainAboutSwiper = new Swiper(".main-about__swiper", {

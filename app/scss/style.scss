@@ -438,6 +438,25 @@ svg.swiper-button-disabled {
         }
     }
 
+    &__pagination {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+
+        .swiper-pagination-bullet {
+            width: 10px !important;
+            height: 10px !important;
+            margin: 0 !important;
+            background: var(--white) !important;
+
+            &-active {
+                background: var(--brown-light-cards) !important;
+            }
+        }
+    }
+
     &__item {
         height: auto;
         display: flex;
