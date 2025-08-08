@@ -96,27 +96,6 @@
     .main-choose {
         padding-top: 80px;
         padding-bottom: 80px;
-
-        &__list {
-            grid-template-columns: 1fr;
-        }
-
-        &__item {
-            &.tr {
-                grid-column: initial;
-                grid-row: initial;
-
-                img {
-                    max-height: 221px;
-                    object-fit: contain;
-                    object-position: left;
-                }
-
-                .brown-btn {
-                    width: calc(50% - 10px);
-                }
-            }
-        }
     }
 
     h1,

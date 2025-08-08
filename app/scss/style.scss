@@ -538,7 +538,7 @@ svg.swiper-button-disabled {
 
     &__list {
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 24px;
     }
 
@@ -550,17 +550,6 @@ svg.swiper-button-disabled {
         border-radius: 10px;
         background: var(--brown-light-cards);
 
-        &.tr {
-            grid-row: 1/3;
-            grid-column: 2;
-
-            .brown-btn {
-                width: 100%;
-                margin-top: 16px;
-                padding: 6px;
-            }
-        }
-
         h3 {
             margin-bottom: 16px;
             color: var(--brown-text);
@@ -570,18 +559,17 @@ svg.swiper-button-disabled {
             margin-bottom: 15px;
             color: var(--brown-light-text);
         }
+
+        img {
+            max-width: 100%;
+            width: fit-content;
+            margin: auto;
+        }
     }
 
-    &__btns {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        gap: 20px;
-        margin-top: 24px;
-
-        .line-btn {
-            padding: 6px;
-        }
+    .brown-btn {
+        margin-top: 42px;
+        padding: 6px;
     }
 }
 
@@ -929,7 +917,8 @@ svg.swiper-button-disabled {
         border-radius: 10px;
     }
 
-    form {
+    form,
+    .wpcf7 {
         grid-column: 2;
         grid-row: 1/3;
 
@@ -1063,6 +1052,20 @@ svg.swiper-button-disabled {
         min-height: 400px;
         width: 100%;
     }
+}
+
+.wpcf7-list-item {
+    margin: 0 !important;
+}
+
+.wpcf7-not-valid-tip {
+    margin: -15px 0 24px !important;
+}
+
+.wpcf7-response-output {
+    margin: 24px 0 0 !important;
+    padding: 16px !important;
+    border-radius: 10px !important;
 }
 
 @import '../scss/hovers';

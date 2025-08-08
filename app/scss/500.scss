@@ -35,4 +35,14 @@
     .main-hero {
         background: url(../images/main-hero-mobile.avif) right top / cover no-repeat;
     }
+
+    .relative {
+        position: relative;
+
+        .wpcf7-spinner {
+            position: absolute !important;
+            bottom: 10px !important;
+            right: 10px !important;
+        }
+    }
 }

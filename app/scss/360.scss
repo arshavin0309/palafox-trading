@@ -1,3 +1,11 @@
+@media (max-width: 390px) {
+    .main-contacts {
+        &__tel, &__mail, &__address {
+            font-size: clamp(14px, 4vw, 18px);
+        }
+    }
+}
+
 @media (max-width: 360px) {
     .white-btn,
     .line-btn,
